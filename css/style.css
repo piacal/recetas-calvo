@@ -1,0 +1,533 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*ELEMENTO QUE SE REPITE EN TODAS LAS SECCIONES*/
+
+/*HEADER*/
+
+.menuHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: #F0E5CF;
+    border: solid;
+}
+
+.logo {
+    width: 12%;
+    margin: 10px;
+}
+
+.listaul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+Header ul li a {
+    text-decoration: none;
+    color: rgb(16, 35, 59);
+}
+
+Header nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+h1{
+    color: rgb(16, 35, 59);
+    font-style: italic;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+}
+
+.p_footer{
+    color: white;
+}
+
+.img_footer{
+    margin: 0 30px;
+}
+
+/*Elementos comunes*/
+
+p{ 
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 15px 0;
+    color: #4B6587;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    color: rgb(22, 30, 84);
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+h4 {
+    text-align: left;
+    font-size: 18px;
+    color: black;
+    font-style: italic;
+    padding: 10px;
+    
+}
+
+.borde{
+    text-align: center;
+    color: rgb(22, 30, 84);
+    font-size: 25px;
+    padding: 10px;
+    border: solid;
+}
+
+
+/*ELEMENTOS SECCION QUIENES SOMOS */
+
+
+main section div p{
+    text-align: center;
+    font-size: 15px;
+    margin: 30px;
+}
+
+/*ELEMENTOS SECCION INDEX-RECETAS*/
+
+#grilla{
+    display: grid;
+}
+
+.h2recetas{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: #4B6587;
+    border-style: solid;
+    border-color: black;
+    background-color: #F7F6F2
+}
+
+
+
+
+.animacioncursos{
+    transform: scale(1 , 1);
+}
+
+.animacioncursos:hover {
+    transform: scale(1.2 , 1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width:600px){
+
+    .listaul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*ELEMENTOS SECCION QUIENES SOMOS */
+    
+   .elementoQuienesSomos{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .img_quienessomos{
+    width: 90%;
+    margin: 20px;
+    }
+
+
+   Main section div h2 {
+    transform: rotate(-35deg);
+    text-align: left;
+   }
+
+   .elm2{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       margin: 20px;
+   }
+
+
+   /*ELEMENTOS SECCION INDEX-RECETAS*/
+
+   #grilla{
+    height: 1000px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "foto1 foto2"
+                         "foto3 foto4";
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+
+   }
+   .imggrilla{
+    width: 100%;
+    height: 100%;
+   }
+
+      
+   /*CONTACTO*/
+
+   .formcontacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+   }
+
+    .inputcontacto{
+        width: 80%;
+        margin: 10px;
+    }
+
+    #textareacontacto{
+        width: 80%;
+        margin: 10px;
+    }
+
+
+    #button{
+        background-color: rgb(97, 95, 95);
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        border-style: solid;
+        border-color: black;
+        margin-bottom: 30px;
+        padding: 10px;
+        
+    }
+
+    
+    /*CURSO*/
+
+    .elementoRecetas{
+        height: 1200px;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 300px 300px 300px 300px ;
+        justify-content: space-around;
+        align-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .imgcurso{
+        width: 0%;
+        height: 0%;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+                
+    }
+
+    /*RECETA*/
+    .elementoTorta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .ingproc{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .imgbrownie{
+        width: 40%;
+        height: 10%;
+    }
+
+    .imgcheesecake{
+        width: 40%;
+        height: 10%;
+    }
+
+    .lirecetas{
+        text-align: justify;
+        padding: 5px;
+        text-transform: initial;
+        margin-left: 60px;
+    }
+
+
+    /*NOTICIAS*/
+    /*PARA LA SECCION 1, reeutilice el elementoquienessomos, ya que necesitaba generar la misma estructura*/
+    
+    .iframeEnfermedad{
+        width: 80%;
+        margin: 30px;
+    }
+    
+    /*Seccion 2 - ANMAT*/
+
+    .linksanmat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+
+
+    .alinksanmat {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        margin: 20px;
+        font-style: italic;
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px) {
+
+   
+    .listaul{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    /*ELEMENTOS SECCION QUIENES SOMOS */
+
+    Main section div h2{
+        text-align: center;
+        margin-bottom: 20px;
+    
+    }
+
+    .img_quienessomos{
+        width: 150%;
+        margin: 20px;
+    }
+    
+    .elementoQuienesSomos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+
+
+    /*ELEMENTOS SECCION INDEX-RECETAS*/
+    
+    #grilla {
+        height: 600px;
+        grid-template-columns: 22% 22% 22% 22%;
+        grid-template-rows: 500px;
+        grid-template-areas: "foto1 foto2 foto3 foto4";
+        justify-content: space-evenly;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+ 
+    /*CONTACTO*/
+
+    .formcontacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        margin: 40px;
+    }
+
+    .inputcontacto{
+        width: 90%;
+        margin-left: 30px;
+    }
+    
+    #textareacontacto{
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .labelcontact{
+        padding-right: 30px;
+    }
+
+    #button{
+        background-color: rgb(97, 95, 95);
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        border-style: solid;
+        border-color: black;
+        margin-bottom: 30px;
+        padding: 10px;
+        
+
+    }
+
+    /*CURSO*/
+
+    .elementoRecetas{
+        height: 800px;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows: 600px;
+        justify-content: space-around;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .imgcurso{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 80%;
+    }
+
+    /*RECETA*/
+    .elementoTorta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .ingproc{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 30px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .imgbrownie{
+        width: 40%;
+        height: 10%;
+    }
+
+    .imgcheesecake{
+        width: 150%;
+        height: 120%;
+    }
+
+
+    .lirecetas{
+        text-align: justify;
+        padding: 10px;
+        text-transform: initial;
+        margin-left: 50px;
+    }
+
+
+    /*NOTICIAS*/
+    /*PARA LA SECCION 1, reeutilice el elementoquienessomos, ya que necesitaba generar la misma estructura*/
+    
+    .iframeEnfermedad{
+        width: 150%;
+        margin: 20px;
+    }
+    
+    /*Seccion 2 - ANMAT*/
+    
+    .linksanmat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    .alinksanmat {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        margin: 20px;
+        font-style: italic;
+    
+    }
+
+}
