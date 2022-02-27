@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,46 +14,85 @@
 <body>
     
     <header>
-        <div class="menuHeader animate__animated animate__slideInDown">
-            <img class="logo" src="../img/01. Logo.JPG" alt="Logo">
-            <h1>CELIRECETAS</h1>
-            <nav>
-                <ul class="listaul">
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="recetas.html">RECETAS</a></li>
-                    <li><a href="cursos.html">CURSOS</a></li>
-                    <li><a href="noticias.html">NOTICIAS</a> </li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__slideInDown menuHeader" style="background-color:#F0E5CF">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                <img src="../img/01. Logo.JPG" alt="Logo" width="90" height="90" class="d-inline-block align-text-center">
+                CELIRECETAS
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="recetas.html">RECETAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">CURSOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">NOTICIAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
         <h2>CURSOS</h2>
-        <div class="elementoRecetas">
-            <div class="animacioncursos">
-                <h3 class="card">PANADERIA</h3>
-                <img class="imgcurso" src="../img/06. MASA MADRE.jpg" alt="PANES">
-                <p class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum veritatis, odio cupiditate id itaque nobis fugit quo, iste molestias modi quisquam labore inventore molestiae eum similique ullam non a exercitationem?</p>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col animacioncursos">
+              <div class="card-body">
+                <h3 class="card-title">PANADERIA</h3>
+              <div class="card">
+                <img src="../img/06. MASA MADRE.jpg" class="card-img-top" alt="PANES">
+                <div class="card-body">
+                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
             </div>
-            <div class="animacioncursos">
-                <h3 class="card">PASTELERIA</h3>
-                <img class="imgcurso" src="../img/07. torta.jpg" alt="PASTELERIA">
-                <p class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum veritatis, odio cupiditate id itaque nobis fugit quo, iste molestias modi quisquam labore inventore molestiae eum similique ullam non a exercitationem?</p>
             </div>
-            <div class="animacioncursos">
-            <h3 class="card">GASTRONOMIA</h3>
-            <img class="imgcurso" src="../img/13. Gastronomía.jpg" alt="GASTRONOMIA">
-            <p class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum veritatis, odio cupiditate id itaque nobis fugit quo, iste molestias modi quisquam labore inventore molestiae eum similique ullam non a exercitationem?</p>
+            <div class="col animacioncursos">
+                <div class="card-body">
+                    <h3 class="card-title">PASTELERIA</h3>
+                  <div class="card">
+                    <img src="../img/07. torta.jpg" class="card-img-top" alt="PASTELERIA">
+                    <div class="card-body">
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div class="animacioncursos">
-            <h3 class="card">COCINERITOS</h3>
-            <img class="imgcurso" src="../img/14. Cocineritos.jpg" alt="COCINERITOS">
-            <p class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum veritatis, odio cupiditate id itaque nobis fugit quo, iste molestias modi quisquam labore inventore molestiae eum similique ullam non a exercitationem?</p>
+            <div class="col animacioncursos">
+                <div class="card-body">
+                    <h3 class="card-title">GASTRONOMIA</h3>
+                  <div class="card">
+                    <img src="../img/13. Gastronomía.jpg" class="card-img-top" alt="GASTRONOMIA">
+                    <div class="card-body">
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
             </div>
-        </div>
-        
+            <div class="col animacioncursos">
+                <div class="card-body">
+                    <h3 class="card-title">COCINERITOS</h3>
+                  <div class="card">
+                    <img src="../img/14. Cocineritos.jpg" class="card-img-top" alt="COCINERITOS">
+                    <div class="card-body">
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
       
     </main>
 
@@ -59,8 +100,8 @@
     <footer>
         <div>
             <p class="p_footer">¡GRACIAS POR VISITARNOS!</p>
-            <img class="img_footer" src="../img/12. facebook.jpg" alt="logoface">
-            <img class="img_footer" src="../img/11. logo instagram.jpg" alt="logoins">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
         </div>
     </footer>
 

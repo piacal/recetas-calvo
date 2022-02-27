@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,24 +14,41 @@
 <body>
     
     <header>
-        <div class="menuHeader animate__animated animate__slideInDown">
-            <img class="logo" src="img/01. Logo.JPG" alt="Logo">
-            <h1>CELIRECETAS</h1>
-            <nav>
-                <ul class="listaul">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="html/recetas.html">RECETAS</a></li>
-                    <li><a href="html/cursos.html">CURSOS</a></li>
-                    <li><a href="html/noticias.html">NOTICIAS</a> </li>
-                    <li><a href="html/contacto.html">CONTACTO</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__slideInDown menuHeader" style="background-color:#F0E5CF">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                <img src="img/01. Logo.JPG" alt="Logo" width="90" height="90" class="d-inline-block align-text-center">
+                CELIRECETAS
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/recetas.html">RECETAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/cursos.html">CURSOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/noticias.html">NOTICIAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="html/contacto.html">CONTACTO</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
         <section class="elementoQuienesSomos">
-            <img class="img_quienessomos" src="img/10. quienessomos.jpg" alt="">
+            <img class="img_quienessomos img-fluid" src="img/10. quienessomos.jpg" alt="">
             <div class="elm2">
                 <h2>QUIENES SOMOS</h2>
                 <div>        
@@ -42,24 +61,40 @@
 
         <section>
             <h2 class="h2recetas">RECETAS</h2>
-            <div id="grilla">
-                <div data-aos="flip-left">
-                    <img class="imggrilla" src="img/02. Salados.jpg" alt="salados">
-                    <P>SALADOS: Pizzas, tartas, empanadas, etc.</P>
+            <div class="row row-cols-1 row-cols-md-4" data-aos="flip-left">
+                <div class="col">
+                    <div class="card">
+                    <img src="img/02. Salados.jpg" class="card-img-top" alt="SALADOS">
+                    <div class="card-body">
+                       <p class="card-text">SALADOS: Pizzas, tartas, empanadas, etc</p>
+                    </div>
                 </div>
-                <div data-aos="flip-left">
-                    <img class="imggrilla" src="img/05. PAN.jpg" alt="pan">
-                    <P>PANES: Lactal, masa madre, etc.</P>
                 </div>
-                <div data-aos="flip-left">
-                    <img class="imggrilla" src="img/03. Ensalada.jpg" alt="ensalada">
-                    <p>ENSALADAS: Variedades para tus comidas</P>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/05. PAN.jpg" class="card-img-top" alt="PAN">
+                        <div class="card-body">
+                           <p class="card-text">PANES: Lactal, masa madre, etc</p>
+                        </div>
+                    </div>
                 </div>
-                <div data-aos="flip-left"> 
-                    <img class="imggrilla" src="img/04. Dulce.jpg" alt="dulce">
-                    <P>DULCE: Tortas, lemmon pie, cheesecake, etc.</P>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/03. Ensalada.jpg" class="card-img-top" alt="ensalada">
+                        <div class="card-body">
+                           <p class="card-text">ENSALADAS: Variedades para tus comidas</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/04. Dulce.jpg" class="card-img-top" alt="Dulce">
+                        <div class="card-body">
+                           <p class="card-text">DULCE: Tortas, lemmon pie, cheesecake, etc</p>
+                        </div>
+                    </div>
+                </div>
+           
         </section>
 
     </main>
@@ -68,8 +103,8 @@
     <footer>
         <div>
             <p class="p_footer">¡GRACIAS POR VISITARNOS!</p>
-            <img class="img_footer" src="img/12. facebook.jpg" alt="logoface">
-            <img class="img_footer" src="img/11. logo instagram.jpg" alt="logoins">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
         </div>
     </footer>
 
