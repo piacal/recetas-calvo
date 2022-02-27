@@ -35,9 +35,8 @@ Header nav ul li {
 /*FOOTER*/
 
 footer {
-    grid-area: footer;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -51,16 +50,16 @@ footer {
 .bi-facebook{
     color: rgb(97, 97, 214);
     justify-content: center;
-    margin-left: 40%;
     font-size: 30px;
+    margin-left: 47%;
     
 }
 
 .bi-instagram{
     justify-content: center;
     color: rgb(182, 66, 182);
-    margin-right: 40%;
     font-size: 30px;
+    margin-right: 50%;
 }
 
 
@@ -136,7 +135,9 @@ main section div p{
     transform: scale(1.2 , 1.2);
 }
 
-
+.btn-outline-secondary{
+    margin-bottom: 20px;
+}
 
 
 
@@ -186,78 +187,7 @@ main section div p{
    }
 
 
-         
-   /*CONTACTO*/
-
-   .formcontacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-   }
-
-    .inputcontacto{
-        width: 80%;
-        margin: 10px;
-    }
-
-    #textareacontacto{
-        width: 80%;
-        margin: 10px;
-    }
-
-
-    #button{
-        background-color: rgb(97, 95, 95);
-        color: white;
-        text-align: center;
-        font-size: 16px;
-        border-style: solid;
-        border-color: black;
-        margin-bottom: 30px;
-        padding: 10px;
-        
-    }
-
-    
-    
-    /*RECETA*/
-    .elementoTorta{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-    }
-
-    .ingproc{
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-        padding: 5px;
-        justify-content: start;
-        align-items: start;
-    }
-
-    .imgbrownie{
-        width: 40%;
-        height: 10%;
-    }
-
-    .imgcheesecake{
-        width: 40%;
-        height: 10%;
-    }
-
-    .lirecetas{
-        text-align: justify;
-        padding: 5px;
-        text-transform: initial;
-        margin-left: 60px;
-    }
-
-
+     
     /*NOTICIAS*/
     /*PARA LA SECCION 1, reeutilice el elementoquienessomos, ya que necesitaba generar la misma estructura*/
     
@@ -336,83 +266,8 @@ main section div p{
        
     }
 
-
+ 
      
-    /*CONTACTO*/
-
-    .formcontacto{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: start;
-        margin: 40px;
-    }
-
-    .inputcontacto{
-        width: 90%;
-        margin-left: 30px;
-    }
-    
-    #textareacontacto{
-        width: 90%;
-        margin-left: 30px;
-    }
-
-    .labelcontact{
-        padding-right: 30px;
-    }
-
-    #button{
-        background-color: rgb(97, 95, 95);
-        color: white;
-        text-align: center;
-        font-size: 16px;
-        border-style: solid;
-        border-color: black;
-        margin-bottom: 30px;
-        padding: 10px;
-        
-
-    }
-
-   
-    /*RECETA*/
-    .elementoTorta{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-    }
-
-    .ingproc{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 30px;
-        justify-content: start;
-        align-items: start;
-    }
-
-    .imgbrownie{
-        width: 40%;
-        height: 10%;
-    }
-
-    .imgcheesecake{
-        width: 150%;
-        height: 120%;
-    }
-
-
-    .lirecetas{
-        text-align: justify;
-        padding: 10px;
-        text-transform: initial;
-        margin-left: 50px;
-    }
-
-
     /*NOTICIAS*/
     /*PARA LA SECCION 1, reeutilice el elementoquienessomos, ya que necesitaba generar la misma estructura*/
     
