@@ -1,0 +1,30 @@
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorFooter;
+    height: 100px;
+    
+}
+
+.p_footer{
+    color: white;
+}
+
+.bi-facebook{
+    color: rgb(97, 97, 214);
+    justify-content: center;
+    font-size: 30px;
+    margin-left: 47%;
+    
+}
+
+.bi-instagram{
+    justify-content: center;
+    color: rgb(182, 66, 182);
+    font-size: 30px;
+    margin-right: 50%;
+}
