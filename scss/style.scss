@@ -89,7 +89,82 @@ main section div p{
 
 
 
+/*CONTACTO*/
 
+@mixin botones ($bgcolor, $colorLetra, $tamanio) {
+
+    padding: 10px;
+    background-color: $bgcolor;
+    color: $colorLetra;
+    margin-bottom: 10px;
+    
+    @if $tamanio == "sm"{
+        width: 110px;
+        height: 50px;
+    }
+
+    @else if $tamanio == "md"{
+        height: 55px;
+        width: 130px;
+    }
+    @else if $tamanio == "lg"{
+        width: 150px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width:992px){
+.btnEnviar{
+    @include botones(rgb(179, 179, 179), rgb(233, 232, 232), "lg");
+    
+}
+}
+
+@media screen and ( max-width:600px){
+    .btnEnviar{
+        @include botones(rgb(179, 179, 179), rgb(233, 232, 232), "sm");
+        
+    }
+}
+
+
+@media screen and (max-width:600px) {
+.btnCancelar{
+    @include botones(rgb(219, 96, 96), rgb(233, 232, 232) , "sm")
+}
+}
+
+@media screen and (min-width:992px){
+    .btnCancelar{
+        @include botones(rgb(219, 96, 96), rgb(233, 232, 232) , "lg")
+    }
+    }
+
+
+
+
+/*MENSAJES CON EXTEND EN INDEX QUIENES SOMOS Y NOTICIAS ENFERMEDAD*/
+
+.mensaje{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mensajeQS{
+    @extend .mensaje;
+    color: darkblue;
+    background-color: rgb(240, 224, 204);
+
+}
+
+.mensajeEN{
+    @extend .mensaje;
+    color: rgb(158, 95, 95);
+    background-color: rgb(248, 235, 220);
+
+}
 
 
 

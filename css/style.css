@@ -20,23 +20,24 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  height: 100px; }
+  background-color: black; }
 
 .p_footer {
   color: white; }
 
 .bi-facebook {
   color: #6161d6;
-  justify-content: center;
-  font-size: 30px;
-  margin-left: 47%; }
+  font-size: 30px; }
 
 .bi-instagram {
-  justify-content: center;
   color: #b642b6;
-  font-size: 30px;
-  margin-right: 50%; }
+  font-size: 30px; }
+
+.bilogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 @media screen and (max-width: 600px) {
   .listaul {
@@ -175,3 +176,55 @@ main section div p {
 
 .btn-outline-secondary {
   margin-bottom: 20px; }
+
+/*CONTACTO*/
+@media screen and (min-width: 992px) {
+  .btnEnviar {
+    padding: 10px;
+    background-color: #b3b3b3;
+    color: #e9e8e8;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 60px; } }
+
+@media screen and (max-width: 600px) {
+  .btnEnviar {
+    padding: 10px;
+    background-color: #b3b3b3;
+    color: #e9e8e8;
+    margin-bottom: 10px;
+    width: 110px;
+    height: 50px; } }
+
+@media screen and (max-width: 600px) {
+  .btnCancelar {
+    padding: 10px;
+    background-color: #db6060;
+    color: #e9e8e8;
+    margin-bottom: 10px;
+    width: 110px;
+    height: 50px; } }
+
+@media screen and (min-width: 992px) {
+  .btnCancelar {
+    padding: 10px;
+    background-color: #db6060;
+    color: #e9e8e8;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 60px; } }
+
+/*MENSAJES CON EXTEND EN INDEX QUIENES SOMOS Y NOTICIAS ENFERMEDAD*/
+.mensaje, .mensajeQS, .mensajeEN {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.mensajeQS {
+  color: darkblue;
+  background-color: #f0e0cc; }
+
+.mensajeEN {
+  color: #9e5f5f;
+  background-color: #f8ebdc; }
