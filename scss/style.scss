@@ -113,14 +113,14 @@ main section div p{
     }
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:751px){
 .btnEnviar{
     @include botones(rgb(179, 179, 179), rgb(233, 232, 232), "lg");
     
 }
 }
 
-@media screen and ( max-width:600px){
+@media screen and ( max-width:750px){
     .btnEnviar{
         @include botones(rgb(179, 179, 179), rgb(233, 232, 232), "sm");
         
@@ -128,13 +128,13 @@ main section div p{
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
 .btnCancelar{
     @include botones(rgb(219, 96, 96), rgb(233, 232, 232) , "sm")
 }
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:751px){
     .btnCancelar{
         @include botones(rgb(219, 96, 96), rgb(233, 232, 232) , "lg")
     }
@@ -146,7 +146,7 @@ main section div p{
 /*MENSAJES CON EXTEND EN INDEX QUIENES SOMOS Y NOTICIAS ENFERMEDAD*/
 
 .mensaje{
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -154,15 +154,15 @@ main section div p{
 
 .mensajeQS{
     @extend .mensaje;
-    color: darkblue;
-    background-color: rgb(240, 224, 204);
+    color: rgb(1, 1, 49);
+    background-color: rgb(241, 238, 234);
 
 }
 
 .mensajeEN{
     @extend .mensaje;
-    color: rgb(158, 95, 95);
-    background-color: rgb(248, 235, 220);
+    color: rgb(66, 60, 109);
+    background-color: rgb(243, 230, 219);
 
 }
 
